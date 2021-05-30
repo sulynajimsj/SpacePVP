@@ -135,7 +135,7 @@ def main():
                 #Add exit function
                 keys_pressed2 = pygame.key.get_pressed()
                 if keys_pressed2[pygame.K_ESCAPE]:
-                    exec(open('Welcome.py').read())
+                    run = False
 
                 if event.key == pygame.K_LCTRL and len(yellow_bullets) < MAX_BULLETS:
                     bullet = pygame.Rect(
